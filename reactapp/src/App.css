@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap');
+
+.App {
+    text-align: center;
+}
+
+.App-React-Logo {
+    height: 25rem;
+    width: 25rem;
+    pointer-events: none;
+    margin: auto;
+}
+
+.App-Django-Logo {
+    height: 15rem;
+    width: 15rem;
+    pointer-events: none;
+    margin: auto;
+}
+
+.App-plus {
+    height: 5rem;
+    pointer-events: none;
+}
+
+.Text {
+    position: absolute;
+    margin-top: 40rem;
+    text-align: center;
+    background: linear-gradient(to right, white 50%, #282c34 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Fira Mono', monospace;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+.App-header {
+    /*background-color: #282c34;*/
+    background-image: linear-gradient(to right, #282c34 50%, white 50%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 200px;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+#react {
+    animation-name: ckw;
+    animation-duration: 15.5s;
+    animation-iteration-count: infinite;
+    transform-origin: 50% 50%;
+    display: inline-block;
+    animation: myAnim 5s ease-in-out 0s infinite normal forwards;
+}
+@keyframes myAnim {
+    0% {
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+
+    50% {
+        opacity: 0.2;
+    }
+
+    100% {
+        opacity: 1;
+        transform: rotate(360deg);
+    }
+}
+
+#django {
+    animation-name: ckw;
+    animation-duration: 15.5s;
+    animation-iteration-count: infinite;
+    transform-origin: 50% 50%;
+    display: inline-block;
+    animation: myAnim2 2s ease-in-out 0s infinite normal forwards;
+}
+@keyframes myAnim2 {
+    0% {
+        transform: translate(0);
+    }
+
+    20% {
+        transform: translate(-2px, 2px);
+    }
+
+    40% {
+        transform: translate(-2px, -2px);
+    }
+
+    60% {
+        transform: translate(2px, 2px);
+    }
+
+    80% {
+        transform: translate(2px, -2px);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
