@@ -19,7 +19,6 @@ from django.views.generic import TemplateView
 from django.conf.urls.static import static
 from react_django import settings
 from django.conf import settings
-from path.to.vc_handler_python import vc_handler_python
 
 
 urlpatterns = [
